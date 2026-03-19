@@ -8,7 +8,7 @@ node(){
 	stage('Build Automation'){
 		sh """
 			ls -lart
-			https://github.com/Haritripa/MavenBuild.git clean install
+			/opt/homebrew/bin/mvn clean install
 			ls -lart target
 
 		"""
